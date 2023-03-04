@@ -42,7 +42,8 @@
             - Funktsionaalsed
             - Mitte funktsionaalsed
             - Muud testid
-        - Vaata ressursside alla, et lugeda rohkem erinevatest testidest.
+        - Lugemiseks erinevatest testidest (sama asi ka ressurssides): https://www.netsolutions.com/insights/definitive-software-testing-list/
         - Uurimiseks huvitav: Netflix monkey testing
+        - Nali kaljaks: https://userinyerface.com/
 
 </details>
