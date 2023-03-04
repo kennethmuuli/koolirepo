@@ -1,0 +1,15 @@
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\bin\Debug\net6.0\Ylesanded.exe
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\bin\Debug\net6.0\Ylesanded.deps.json
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\bin\Debug\net6.0\Ylesanded.runtimeconfig.json
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\bin\Debug\net6.0\Ylesanded.dll
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\bin\Debug\net6.0\Ylesanded.pdb
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\obj\Debug\net6.0\Ylesanded.csproj.AssemblyReference.cache
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\obj\Debug\net6.0\Ylesanded.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\obj\Debug\net6.0\Ylesanded.AssemblyInfoInputs.cache
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\obj\Debug\net6.0\Ylesanded.AssemblyInfo.cs
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\obj\Debug\net6.0\Ylesanded.csproj.CoreCompileInputs.cache
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\obj\Debug\net6.0\Ylesanded.dll
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\obj\Debug\net6.0\refint\Ylesanded.dll
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\obj\Debug\net6.0\Ylesanded.pdb
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\obj\Debug\net6.0\Ylesanded.genruntimeconfig.cache
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Ylesanded\Ylesanded\obj\Debug\net6.0\ref\Ylesanded.dll

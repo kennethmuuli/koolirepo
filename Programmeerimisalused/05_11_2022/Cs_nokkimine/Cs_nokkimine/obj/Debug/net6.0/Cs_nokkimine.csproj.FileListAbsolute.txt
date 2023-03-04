@@ -1,0 +1,15 @@
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\bin\Debug\net6.0\Cs_nokkimine.exe
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\bin\Debug\net6.0\Cs_nokkimine.deps.json
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\bin\Debug\net6.0\Cs_nokkimine.runtimeconfig.json
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\bin\Debug\net6.0\Cs_nokkimine.dll
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\bin\Debug\net6.0\Cs_nokkimine.pdb
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\obj\Debug\net6.0\Cs_nokkimine.csproj.AssemblyReference.cache
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\obj\Debug\net6.0\Cs_nokkimine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\obj\Debug\net6.0\Cs_nokkimine.AssemblyInfoInputs.cache
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\obj\Debug\net6.0\Cs_nokkimine.AssemblyInfo.cs
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\obj\Debug\net6.0\Cs_nokkimine.csproj.CoreCompileInputs.cache
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\obj\Debug\net6.0\Cs_nokkimine.dll
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\obj\Debug\net6.0\refint\Cs_nokkimine.dll
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\obj\Debug\net6.0\Cs_nokkimine.pdb
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\obj\Debug\net6.0\Cs_nokkimine.genruntimeconfig.cache
+C:\Users\It\Desktop\Programmeerimisalused\05_11_2022\Cs_nokkimine\Cs_nokkimine\obj\Debug\net6.0\ref\Cs_nokkimine.dll

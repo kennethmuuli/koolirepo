@@ -1,0 +1,5 @@
+p:first-letter {font-size:200%; color:red}
+p:first-line {background-color: yellow}
+*:lang(es) {background-color: lime}
+span:first-child{background-color:aqua}
+

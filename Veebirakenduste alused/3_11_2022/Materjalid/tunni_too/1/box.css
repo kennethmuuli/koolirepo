@@ -1,0 +1,7 @@
+p {background: yellow; width: 20em}
+
+p.pad {padding: 1em}
+/* em = circa 15 px, kuid on suhteline mootyhik */
+p.bdr {border: 0.5em red solid}
+
+p.mgn {margin: 2em}

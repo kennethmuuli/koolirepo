@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="opilane"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:04:50 AM"/>
+        <attribute name="created" value="b3BpbGFuZTtLTEFTU0IzMDctM18xOTsyMDIyLTExLTA0OzA4OjM0OjM4IEFNOzI5MTA="/>
+        <attribute name="edited" value="b3BpbGFuZTtLTEFTU0IzMDctM18xOTsyMDIyLTExLTA0OzExOjA0OjUwIEFNOzM7MzAwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Fibonacci jada massiiviga"/>
+            <declare name="k" type="Integer" array="False" size=""/>
+            <output expression="&quot;Fibonacci jada suurus &quot;" newline="True"/>
+            <input variable="k"/>
+            <comment text="k+1, sest 0-st 10-ni on 11 elementi"/>
+            <declare name="Fib" type="Integer" array="True" size="k+1"/>
+            <assign variable="Fib[0]" expression="0"/>
+            <assign variable="Fib[1]" expression="1"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="2" end="k" direction="inc" step="1">
+                <assign variable="Fib[i]" expression="Fib[i-1]+Fib[i-2]"/>
+            </for>
+            <for variable="i" start="0" end="k" direction="inc" step="1">
+                <output expression="Fib[i] &amp; &quot;, &quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

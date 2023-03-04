@@ -1,0 +1,14 @@
+* {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+
+header {background-color: black;}
+
+nav.ulemineNav {display: inline-block;}
+
+div.vasakNav li {color: white; list-style: none;  float: left; font-size: 25px; padding: 5px;}
+div.vasakNav li a {color: white; font-size: 15px;}
+
+.paremNav {padding-left: 300px;}
+div.paremNav li {color: white; list-style: none; float: right; padding: 5px;}
+div.paremNav li a {color: white;}
+
+a{text-decoration: none;}

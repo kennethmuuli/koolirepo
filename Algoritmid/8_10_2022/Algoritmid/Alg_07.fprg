@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="It"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-21 10:22:27 AM"/>
+        <attribute name="created" value="SXQ7REVTS1RPUC0zUkFSSzlMOzIwMjItMTAtMjE7MTA6MDY6MzAgQU07MjUwOQ=="/>
+        <attribute name="edited" value="SXQ7REVTS1RPUC0zUkFSSzlMOzIwMjItMTAtMjE7MTA6MjI6MjcgQU07NzsyNjI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="arv, maksimum, loendur, mitu" type="Integer" array="False" size=""/>
+            <do expression="mitu&lt;=0">
+                <output expression="&quot;Mitu arvu sisestame&quot;" newline="True"/>
+                <input variable="mitu"/>
+            </do>
+            <assign variable="loendur" expression="1"/>
+            <while expression="loendur&lt;=mitu">
+                <output expression="&quot;Sisesta arv &quot; &amp; loendur" newline="True"/>
+                <input variable="arv"/>
+                <if expression="loendur=1">
+                    <then>
+                        <assign variable="maksimum" expression="arv"/>
+                    </then>
+                    <else>
+                        <if expression="arv&gt;maksimum">
+                            <then>
+                                <assign variable="maksimum" expression="arv"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="loendur" expression="loendur+1"/>
+            </while>
+            <output expression="&quot;Maksimum = &quot; &amp; maksimum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

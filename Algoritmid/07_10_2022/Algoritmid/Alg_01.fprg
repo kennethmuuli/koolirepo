@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="It"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-07 10:22:46 AM"/>
+        <attribute name="created" value="SXQ7REVTS1RPUC0zUkFSSzlMOzIwMjItMTAtMDc7MDk6MDQ6MTUgQU07MjUyMg=="/>
+        <attribute name="edited" value="SXQ7REVTS1RPUC0zUkFSSzlMOzIwMjItMTAtMDc7MTA6MjI6NDYgQU07NTsyNjMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Aritmeetilised tehted."/>
+            <declare name="arv1, arv2, arv3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Esimene arv&quot;" newline="True"/>
+            <input variable="arv1"/>
+            <output expression="&quot;Teine arv&quot;" newline="True"/>
+            <input variable="arv2"/>
+            <assign variable="arv3" expression="arv1+arv2"/>
+            <output expression="&quot;Summa = &quot; &amp; arv3" newline="True"/>
+            <comment text=". . ."/>
+        </body>
+    </function>
+</flowgorithm>

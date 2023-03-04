@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="It"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-07 11:01:13 AM"/>
+        <attribute name="created" value="SXQ7REVTS1RPUC0zUkFSSzlMOzIwMjItMTAtMDc7MDk6MDQ6MTUgQU07MjUyMg=="/>
+        <attribute name="edited" value="SXQ7REVTS1RPUC0zUkFSSzlMOzIwMjItMTAtMDc7MTE6MDE6MTMgQU07MTQ7MjY3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="V&#245;rdus tehted."/>
+            <declare name="arv1, arv2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Esimene arv&quot;" newline="True"/>
+            <input variable="arv1"/>
+            <output expression="&quot;Teine arv&quot;" newline="True"/>
+            <input variable="arv2"/>
+            <if expression="arv1&gt;arv2">
+                <then>
+                    <output expression="&quot;Esimene arv on suurem.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="arv2&gt;arv1">
+                        <then>
+                            <output expression="&quot;Teine arv on suurem.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Arvud on v&#245;rdsed.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <declare name="maksimum" type="Integer" array="False" size=""/>
+            <if expression="arv1&gt;=arv2">
+                <then>
+                    <assign variable="maksimum" expression="arv1"/>
+                </then>
+                <else>
+                    <assign variable="maksimum" expression="arv2"/>
+                </else>
+            </if>
+            <output expression="&quot;Maksimum = &quot; &amp; maksimum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
