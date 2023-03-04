@@ -1,33 +1,50 @@
 window.onload = initLinks;
 
-var myPix = new Array(
-	"images/slideImg0",
-	"images/slideImg1",
-	"images/slideImg2",
-	"images/slideImg3",
-	"images/slideImg4",
+var myImages = new Array(
+	"images/slideImg0.jpg",
+	"images/slideImg1.jpg",
+	"images/slideImg2.jpg",
+	"images/slideImg3.jpg",
+	"images/slideImg4.jpg",
 	);
-var thisPic = 0;
+var currentImage = 0;
 
-function initLinks() {  // see funktsioon loob event handlerid Previous ja Next linkidele
-	document.getElementById("prevLink").onclick = processPrevious;
-	document.getElementById("nextLink").onclick = processNext;
+//order matched with myImages order, if you change order of images in myImages OR add/remove images, make sure to update descriptions accordingly
+var imageDescriptions = new Array(
+	"This is a cruise ship",
+	"This is a river between mountains",
+	"This is a beautiful mountain",
+	"This might be Rose Dewitt Bukaters ring, the one she threw in the ocean.",
+	"This is a shabby house",
+);
+var currentDescription = 0;
+
+var randomNumber;
+
+function initLinks() {
+	
+	generateRandom();
+	
+	document.getElementById("image").src = myImages[currentImage]
+	document.getElementById("imageDescription").innerHTML = imageDescriptions[currentDescription];
+
+	document.getElementById("generate").onclick = generateRandom;
 }
 
-function processPrevious() {  // see funktsioon paneb slideshow jooksma previous suunal
-	if (thisPic == 0) {
-		thisPic = myPix.length;
-	}
-	thisPic--;  // vähendab thisPic väärtust 1. võrra
-	document.getElementById("myPicture").src = myPix[thisPic];// src myPicture seotakse myPix massiivi konkreetse väärtusega thisPic (myPicture==id)
+function generateRandom() {
+	randomNumber = Math.floor(Math.random() * myImages.length);
+
+	loadImage();
+}
+
+function loadImage() { 
+
+	currentImage = randomNumber;
+	currentDescription = randomNumber;
+
+	document.getElementById("image").src = myImages[currentImage]
+	document.getElementById("imageDescription").innerHTML = imageDescriptions[currentDescription];
+
 	return false;
 }
 
-function processNext() {  //slideshow jookseb next suunas
-	thisPic++;
-	if (thisPic == myPix.length) {
-		thisPic = 0;
-	}
-	document.getElementById("myPicture").src = myPix[thisPic];
-	return false;
-}
