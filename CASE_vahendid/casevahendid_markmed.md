@@ -15,6 +15,24 @@
 ***
 
 <details>
+  <Summary>17/3/2023</Summary>
+  
+1) Svelte dev tools (googleda) - see lisab plugin, mis on developer toolide tarbeks. Peale installi tekib lisa tool inspecti alla "Svelte". image.png
+2) Hea JS artikkel koodi lihtustamisest - https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
+3) Static hosting, netlify / surge
+  - Tegime hosting surge-ga (https://surge.sh/)
+  - Commands:
+    - `npm install surge`, veebis `npm install --global surge` aga me panime lokaalselt ainult ühele projektile külge
+    - `npx surge` sisse logimiseks ja alustamiseks (esimene kord palus teha logini)
+    - ülesse seadmisel esimene kord vaata üle ka faili path (küsib setupis), oluline, et suunad ta kausta, kus su HTML ja assetid (meil oli "dist" kaust naiteks)
+    - lõime ka `npm run deploy` käsu ja sisuks sai `"deploy": "npm run build && surge ./dist tenuous-knot.surge.sh"`
+    - surge dokumentatsioon: https://surge.sh/help/
+  - Lõime modali komponendi ja listi komponendid
+
+
+  </details>
+
+<details>
   <Summary>3/3/2023</Summary>
 
 Tööriistade kasutamine:
