@@ -7,6 +7,17 @@
 ## Tundide markmed
 
 <details>
+    <Summary>03/18/2023</Summary>
+
+    Rääkisime:
+    1. Arenduskeskkondade jaotusest: Dev -> Test -> QA -> (pre-live) -> Live/Production
+    2. Issue tracking vs bug tracking (raportite struktuurid ja nende erinevused), vaatasime ja Gunnar täitis ka pikemalt ühe näidise.
+    3. Kodutöö saime ka. - Vearaportite kirjutamine ja vigade parandamine -> AddNumbers.Zip + oma kalkulaator (varasemast ajast)
+
+
+</details>
+
+<details>
     <Summary>03/04/2023</Summary>
 
     1. "Tarkvara testimine on tegevus, mille eesmärgiks on tuvastada tarkvaras peituvad vead, puudusd ja tõrked."
