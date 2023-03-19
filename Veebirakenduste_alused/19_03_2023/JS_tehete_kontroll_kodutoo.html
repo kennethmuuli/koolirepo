@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title>Lihtne matemaatika koos kontrolliga</title>
+
+        <script language="JavaScript">
+
+            let operator;
+
+            //Kalkuleeri vastus vastavalt valitud operaatorile.
+            function calculate(operator) {
+                
+                var Arv1 = new Number(
+                document.getElementById("Arv1").value);
+                var Arv2 = new Number(
+                document.getElementById("Arv2").value);
+                var Vastus = new Number(
+                document.getElementById("Vastus").value);
+
+                switch(operator) 
+                {
+                    case "+":
+                        if (Vastus==Arv1+Arv2) 
+                        {
+                            alert('Õige vastus!')
+                        }
+                        else 
+                        {
+                            alert("Vale vastus!");
+                        }
+                        break;
+                    case "-":
+                        if (Vastus==Arv1-Arv2) 
+                        {
+                            alert('Õige vastus!')
+                        }
+                        else 
+                        {
+                            alert("Vale vastus!");
+                        }
+                        break;
+                    case "*":
+                        if (Vastus==Arv1*Arv2) 
+                        {
+                            alert('Õige vastus!')
+                        }
+                        else 
+                        {
+                            alert("Vale vastus!");
+                        }
+                        break;
+                    case "/":
+                        if (Vastus==Arv1/Arv2) 
+                        {
+                            alert('Õige vastus!')
+                        }
+                        else 
+                        {
+                            alert("Vale vastus!");
+                        }
+                        break;
+                    default:
+                            alert('NO MATCHING CASE!')
+                }
+
+            }
+ 
+        </script>
+    </head>
+    
+    <body>
+
+        <h1>Sisesta tehted koos vastusega</h1>
+        
+        <p>Arv 1:<input type="text" id="Arv1" value=""></p>
+
+        <input type="button" value="+" onclick="operator='+'" />
+        <input type="button" value="-" onclick="operator='-'" />
+        <input type="button" value="*" onclick="operator='*'" />
+        <input type="button" value="/" onclick="operator='/'" />
+
+        <p>Arv 2:<input type="text" id="Arv2" value=""></p>
+        
+        <p>Paukutud vastus:<input type="text" id="Vastus" value=""></p>
+
+        <input type="button" value="Kontrolli" onclick="calculate(operator)" />
+
+    </body>
+
+</html>
