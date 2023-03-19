@@ -1,0 +1,30 @@
+C:\temp\AddNumbers\AddNumbers\bin\Debug\net6.0\AddNumbers.exe
+C:\temp\AddNumbers\AddNumbers\bin\Debug\net6.0\AddNumbers.deps.json
+C:\temp\AddNumbers\AddNumbers\bin\Debug\net6.0\AddNumbers.runtimeconfig.json
+C:\temp\AddNumbers\AddNumbers\bin\Debug\net6.0\AddNumbers.dll
+C:\temp\AddNumbers\AddNumbers\bin\Debug\net6.0\AddNumbers.pdb
+C:\temp\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.csproj.AssemblyReference.cache
+C:\temp\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.AssemblyInfoInputs.cache
+C:\temp\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.AssemblyInfo.cs
+C:\temp\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.csproj.CoreCompileInputs.cache
+C:\temp\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.dll
+C:\temp\AddNumbers\AddNumbers\obj\Debug\net6.0\refint\AddNumbers.dll
+C:\temp\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.pdb
+C:\temp\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.genruntimeconfig.cache
+C:\temp\AddNumbers\AddNumbers\obj\Debug\net6.0\ref\AddNumbers.dll
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\bin\Debug\net6.0\AddNumbers.exe
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\bin\Debug\net6.0\AddNumbers.deps.json
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\bin\Debug\net6.0\AddNumbers.runtimeconfig.json
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\bin\Debug\net6.0\AddNumbers.dll
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\bin\Debug\net6.0\AddNumbers.pdb
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.csproj.AssemblyReference.cache
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.AssemblyInfoInputs.cache
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.AssemblyInfo.cs
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.csproj.CoreCompileInputs.cache
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.dll
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\obj\Debug\net6.0\refint\AddNumbers.dll
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.pdb
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\obj\Debug\net6.0\AddNumbers.genruntimeconfig.cache
+C:\Users\Kenneth Muuli\source\repos\koolirepo\Testimise_alused\kodutoo_projekt\AddNumbers\AddNumbers\obj\Debug\net6.0\ref\AddNumbers.dll
