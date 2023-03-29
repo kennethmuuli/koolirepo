@@ -1,0 +1,17 @@
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\obj\Debug\net6.0-windows\Minesweeper_Game.csproj.AssemblyReference.cache
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\obj\Debug\net6.0-windows\Minesweeper_Game.Minesweeper.resources
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\obj\Debug\net6.0-windows\Minesweeper_Game.csproj.GenerateResource.cache
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\obj\Debug\net6.0-windows\Minesweeper_Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\obj\Debug\net6.0-windows\Minesweeper_Game.AssemblyInfoInputs.cache
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\obj\Debug\net6.0-windows\Minesweeper_Game.AssemblyInfo.cs
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\obj\Debug\net6.0-windows\Minesweeper_Game.csproj.CoreCompileInputs.cache
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\bin\Debug\net6.0-windows\Minesweeper_Game.exe
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\bin\Debug\net6.0-windows\Minesweeper_Game.deps.json
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\bin\Debug\net6.0-windows\Minesweeper_Game.runtimeconfig.json
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\bin\Debug\net6.0-windows\Minesweeper_Game.dll
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\bin\Debug\net6.0-windows\Minesweeper_Game.pdb
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\obj\Debug\net6.0-windows\Minesweeper_Game.dll
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\obj\Debug\net6.0-windows\refint\Minesweeper_Game.dll
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\obj\Debug\net6.0-windows\Minesweeper_Game.pdb
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\obj\Debug\net6.0-windows\Minesweeper_Game.genruntimeconfig.cache
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\kursusetoo\Minesweeper_Game\Minesweeper_Game\obj\Debug\net6.0-windows\ref\Minesweeper_Game.dll

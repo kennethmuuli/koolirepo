@@ -1,0 +1,66 @@
+C:\Users\opilane\Desktop\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.exe.config
+C:\Users\opilane\Desktop\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.exe
+C:\Users\opilane\Desktop\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.pdb
+C:\Users\opilane\Desktop\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\opilane\Desktop\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.AK_Form1.resources
+C:\Users\opilane\Desktop\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.AK_Form_Main.resources
+C:\Users\opilane\Desktop\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.Properties.Resources.resources
+C:\Users\opilane\Desktop\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\opilane\Desktop\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\opilane\Desktop\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.exe
+C:\Users\opilane\Desktop\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.pdb
+C:\Muuli Kenneth KTA-22E\OOP\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.exe.config
+C:\Muuli Kenneth KTA-22E\OOP\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.exe
+C:\Muuli Kenneth KTA-22E\OOP\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.pdb
+C:\Muuli Kenneth KTA-22E\OOP\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Muuli Kenneth KTA-22E\OOP\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Muuli Kenneth KTA-22E\OOP\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.AK_Form1.resources
+C:\Muuli Kenneth KTA-22E\OOP\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.AK_Form_Main.resources
+C:\Muuli Kenneth KTA-22E\OOP\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.Properties.Resources.resources
+C:\Muuli Kenneth KTA-22E\OOP\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Muuli Kenneth KTA-22E\OOP\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Muuli Kenneth KTA-22E\OOP\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.exe
+C:\Muuli Kenneth KTA-22E\OOP\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.pdb
+C:\Muuli Kenneth KTA-22E\OOP\02.02.2023\AK_Projekt1_KTA22E\AK_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.KM_Form2.resources
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt2_ooptund\KM_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.exe.config
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt2_ooptund\KM_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.exe
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt2_ooptund\KM_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.pdb
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt2_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt2_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.AK_Form1.resources
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt2_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.AK_Form_Main.resources
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt2_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.KM_Form2.resources
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt2_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.Properties.Resources.resources
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt2_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt2_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt2_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.exe
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt2_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.pdb
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt2_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.km_Form3.resources
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.exe.config
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.exe
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.pdb
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.AK_Form1.resources
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.AK_Form_Main.resources
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.KM_Form2.resources
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.km_Form3.resources
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.Properties.Resources.resources
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.exe
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.pdb
+C:\Muuli Kenneth KTA-22E\OOP\km_projekt3_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.km_Form4.resources
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.exe.config
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.exe
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\bin\Debug\AK_WindowsFormsApp1.pdb
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.AK_Form1.resources
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.AK_Form_Main.resources
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.KM_Form2.resources
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.km_Form3.resources
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.km_Form4.resources
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.exe
+C:\Users\Kenneth Muuli\source\repos\koolirepo\OOP_alused\tunnis\km_projekt4_ooptund\KM_WindowsFormsApp1\obj\Debug\AK_WindowsFormsApp1.pdb
