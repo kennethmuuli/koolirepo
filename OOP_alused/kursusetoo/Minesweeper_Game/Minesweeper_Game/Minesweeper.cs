@@ -25,8 +25,8 @@ namespace Minesweeper_Game
         //game won state kui koik valjad on avatud peale pommide
         /// </MVP>
 
-        int bombsInGame = 2;
-        int gameFieldWidthUnits = 3, gameFieldHeightUnits = 3;
+        int bombsInGame = 5;
+        int gameFieldWidthUnits = 5, gameFieldHeightUnits = 5;
         //valjade massiiv
         Button[] field;
         //List, mis hoiab iga valja kohta booleani, kas antud valjal on pomm
@@ -132,16 +132,17 @@ namespace Minesweeper_Game
                     int[] adjacentPositions = FieldsToCheck(i);
 
                     //kain labi iga ymbritseva valja ja kontrollin, kas seal on pomm
-                    for (int x = 0; x < adjacentPositions.Length; i++)
+                    for (int x = 0; x < adjacentPositions.Length; x++)
                     {
-                        bool isInBounds = adjacentPositions[x] > -1 && adjacentPositions[x] < field.Length;
 
-                        //kui konkreetne ymbritsev positsioon manguvaljal (s.t. not out of bounds) JA kontrollitava indeksiga valjal on pomm siis suurenda pommi loendurit
-                        if (adjacentPositions[x] > -1 && adjacentPositions[x] < field.Length && fieldHasBomb[adjacentPositions[x]])
+                        int nextFieldToCheck = adjacentPositions[x];
+
+                        //kontrollin, kas ymbritseval valjal on pomm
+                        if (fieldHasBomb[nextFieldToCheck])
                         {
                             adjacentBombsCounter++;
                         }
-                        
+
                     }
 
                     //salvesta valja tulemus
@@ -156,26 +157,53 @@ namespace Minesweeper_Game
 
         private int[] FieldsToCheck(int fieldIndex)
         {
-            //array [top left, top, top right, before, after, bottom left, bottom, bottom right] 
+            //massivi indeksite jarjestus [top left, top, top right, before, after, bottom left, bottom, bottom right] 
             int[] fieldsToCheck = new int[8];
+            int[] absolutePositions = new int[8];
 
+            //kalkuleeri kontrollitavat valja ymbritsevade valjade absoluutsed positsioonid (indeksid)
             //top left = top - 1
-            fieldsToCheck[0] = fieldIndex - gameFieldWidthUnits - 1;
+            absolutePositions[0] = fieldIndex - gameFieldWidthUnits - 1;
             //top i-gameFieldWidthUnits
-            fieldsToCheck[1] = fieldIndex - gameFieldWidthUnits;
+            absolutePositions[1] = fieldIndex - gameFieldWidthUnits;
             //top right = top + 1
-            fieldsToCheck[2] = fieldIndex - gameFieldWidthUnits + 1;
+            absolutePositions[2] = fieldIndex - gameFieldWidthUnits + 1;
             //before i-1
-            fieldsToCheck[3] = fieldIndex - 1;
+            absolutePositions[3] = fieldIndex - 1;
             //after i+1
-            fieldsToCheck[4] = fieldIndex + 1;
+            absolutePositions[4] = fieldIndex + 1;
             //bottom left = bottom - 1
-            fieldsToCheck[5] = fieldIndex + gameFieldWidthUnits - 1;
+            absolutePositions[5] = fieldIndex + gameFieldWidthUnits - 1;
             //bottom i+gameFieldWidthUnits
-            fieldsToCheck[6] = fieldIndex + gameFieldWidthUnits;
+            absolutePositions[6] = fieldIndex + gameFieldWidthUnits;
             //bottom right = bottom + 1
-            fieldsToCheck[7] = fieldIndex + gameFieldWidthUnits + 1;
+            absolutePositions[7] = fieldIndex + gameFieldWidthUnits + 1;
+            
+            for (int i = 0; i < fieldsToCheck.Length; i++)
+            {
+                //kontrolli, kas absoluutse positsiooni indeks on manguvalja indeksite hulgas
+                if (absolutePositions[i] > -1 && absolutePositions[i] < field.Length)
+                {
+                    int inputFieldRow = fieldIndex / gameFieldWidthUnits;
+                    int fieldToCheckRow = absolutePositions[i] / gameFieldWidthUnits;
+                    int fieldToCheckColumn = absolutePositions[i] % gameFieldWidthUnits;
+                    int indexDif = Math.Abs( fieldIndex - absolutePositions[i]);
+                    int columnDif = Math.Abs(fieldIndex % gameFieldWidthUnits - fieldToCheckColumn);
 
+                    //kontrolli, kas absoluutne positsioon asub vaiksemas voi suuremas reas JA kas indeksite vahe on tapselt yks VOI veergude vahe on rohkem kui yks, et valtida valede valjade lugemist
+                    if (inputFieldRow > fieldToCheckRow && indexDif == 1 || columnDif > 1)
+                    {
+                        fieldsToCheck[i] = fieldIndex;
+                    }
+                    else if (inputFieldRow > fieldToCheckRow && indexDif == 1 || columnDif > 1)
+                    {
+                        fieldsToCheck[i] = fieldIndex;
+                    }
+                    else fieldsToCheck[i] = absolutePositions[i];
+                }
+                //kui absoluutne positsioon ei asu manguvaljakul siis maarame indeksiks meetodi sisend indeksi, kuna teame, et seal pole pommi
+                else fieldsToCheck[i] = fieldIndex;
+            }
             return fieldsToCheck;
         }
 
