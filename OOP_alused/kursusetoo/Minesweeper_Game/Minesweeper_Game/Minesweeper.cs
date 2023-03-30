@@ -1,3 +1,4 @@
+using System.Data;
 using System.Security.Cryptography;
 
 namespace Minesweeper_Game
@@ -25,8 +26,8 @@ namespace Minesweeper_Game
         //game won state kui koik valjad on avatud peale pommide
         /// </MVP>
 
-        int bombsInGame = 5;
-        int gameFieldWidthUnits = 5, gameFieldHeightUnits = 5;
+        int bombsInGame = 15;
+        int gameFieldWidthUnits = 10, gameFieldHeightUnits = 10;
         //valjade massiiv
         Button[] field;
         //List, mis hoiab iga valja kohta booleani, kas antud valjal on pomm
@@ -37,10 +38,19 @@ namespace Minesweeper_Game
         public Minesweeper()
         {
             InitializeComponent();
+            StartGame();
+        }
+
+        private void StartGame()
+        {
+            
             field = new Button[gameFieldWidthUnits * gameFieldHeightUnits];
             GenerateGameField();
             PlaceBombs();
             CalculateAdjacentBombsNumber();
+
+            GameOverMessage.Visible = false;
+            RestartButton.Visible = false;
         }
 
         private void GenerateGameField()
@@ -212,6 +222,31 @@ namespace Minesweeper_Game
             int n = Array.IndexOf(field, (Button)sender);
 
             field[n].BackColor = Color.White;
+
+            if (fieldHasBomb[n])
+            {
+                GameOver();
+            }
+
+        }
+
+        private void RestartButton_Click(object sender, EventArgs e)
+        {
+
+            field = null;
+            fieldHasBomb.Clear();
+            fieldAdjacentBombs.Clear();
+
+            InitializeComponent();
+            StartGame();
+
+            
+        }
+
+        private void GameOver()
+        {
+            GameOverMessage.Visible = true;
+            RestartButton.Visible = true;
 
         }
 
