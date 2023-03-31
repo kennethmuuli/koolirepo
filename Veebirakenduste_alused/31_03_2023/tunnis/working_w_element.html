@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Element Visibility</title>
+
+    <script src = "http://code.jquery.com/jquery-latest.js"></script>
+
+    <script src = "http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+    <link 
+        rel="stylesheet"
+        href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"
+    />
+
+    <style>
+        .Transition {
+            margin: 5px;
+            font-family: sans-serif;
+        }
+        .Normal {
+            background-color: #7fffff;
+            color: black;
+            border: groove;
+            border-width: 5px;
+            padding: 3px;
+            height: 50px;
+            width: 400px;
+        }
+    </style>
+
+    <script language="JavaScript">
+        $(function()
+        {
+            //Keep track of the element Hidden state.
+            var Hidden = false;
+
+            $("#Effect").click(
+                function() {
+                    
+                    //Set to the changed Hidden.
+                    $("#SampleText").effect(
+                        
+                            "bounce", "easeOutBounce", 1500);
+
+                        });
+                
+            $("#Show").click(
+                function() 
+                {
+                    Hidden = false;
+
+                    $("#SampleText").show(
+                        "slide", 1500, ChangeButtonState);
+                });
+            
+            $("#Toggle").click(
+                function() {
+                    Hidden = !Hidden;
+
+                    $("SampleText").toggle(
+                        "scale", {percent: 0}, 1500, ChangeButtonState);
+            });
+            
+            // set button state as needed
+            function ChangeButtonState(){
+                if (Hidden){
+                    $("#Show").attr("hidden", false);
+                    $("#Hide").attr("hidden", true);
+                }
+                else {
+                    $("#Show").attr("hidden", true);
+                    $("#Hide").attr("hidden", false);
+                }
+            }       
+
+        })
+    </script>
+</head>
+
+<body>
+    <h1>Working with Element Visibility</h1>
+    <div class="Transition">
+        <div id="SampleText" class="Normal">
+            This is some text to transition.
+        </div>
+    </div>
+    <div>
+        <input type="button"
+                id="Effect"
+                value="Use an Effect" />
+        <input type="button"
+                id="Show"
+                hidden="true"
+                value="Show a Hidden Element" />
+        <input type="button"
+                id="Hide"
+                value="Hide a Visible Element" />
+        <input type="button"
+                id="Toggle"
+                value="Toggle Element Visibility" />
+    </div>
+        
+</body>
+</html>
