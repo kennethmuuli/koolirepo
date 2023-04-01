@@ -26,19 +26,22 @@ namespace Minesweeper_Game
         //game won state kui koik valjad on avatud peale pommide
         /// </MVP>
 
-        int bombsInGame = 15;
-        int gameFieldWidthUnits = 10, gameFieldHeightUnits = 10;
+        int bombsInGame = 2;
+        int gameFieldWidthUnits = 3, gameFieldHeightUnits = 3;
+        int fieldsLeftToWin = 0;
         //valjade massiiv
         Button[] field;
         //List, mis hoiab iga valja kohta booleani, kas antud valjal on pomm
         List<bool> fieldHasBomb = new List<bool>();
         List<int> fieldAdjacentBombs = new List<int>();
 
+        bool testMode = false;
    
         public Minesweeper()
         {
             InitializeComponent();
             StartGame();
+            fieldsLeftToWin = gameFieldWidthUnits * gameFieldHeightUnits - bombsInGame;
         }
 
         private void StartGame()
@@ -223,9 +226,20 @@ namespace Minesweeper_Game
 
             field[n].BackColor = Color.White;
 
+            //kontrolli, kas valjal on pomm voi mitte
             if (fieldHasBomb[n])
             {
                 GameOver();
+            }
+            else
+            {
+                fieldsLeftToWin--;
+
+                //kui pommideta valjad on otsas, siis on mang voidetud
+                if (fieldsLeftToWin == 0)
+                {
+                    GameWon();
+                }
             }
 
         }
@@ -233,21 +247,29 @@ namespace Minesweeper_Game
         private void RestartButton_Click(object sender, EventArgs e)
         {
 
-            field = null;
-            fieldHasBomb.Clear();
-            fieldAdjacentBombs.Clear();
+            //field = null;
+            //fieldHasBomb.Clear();
+            //fieldAdjacentBombs.Clear();
 
-            InitializeComponent();
-            StartGame();
+            //InitializeComponent();
+            //StartGame();
+            Application.Restart();
 
-            
         }
 
         private void GameOver()
         {
             GameOverMessage.Visible = true;
+            GameOverMessage.Text = "Game Over!";
             RestartButton.Visible = true;
 
+        }
+
+        private void GameWon()
+        {
+            GameOverMessage.Visible = true;
+            GameOverMessage.Text = "Game Won!";
+            RestartButton.Visible = true;
         }
 
         

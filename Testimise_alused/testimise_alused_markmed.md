@@ -7,7 +7,15 @@
 ## Tundide markmed
 
 <details>
-    <Summary>03/18/2023</Summary>
+    <Summary>04/01/2023</Summary>
+
+    Õppe jõud oli purjus. Ei tea, mida me teeme. Word vist tuleb katki teha ja siis õppejõud saab meile Microsofti kõigile töökoha nagu ma aru sain. icc, icc
+
+</details>
+
+
+<details>
+    <Summary>18/03/2023</Summary>
 
     Rääkisime:
     1. Arenduskeskkondade jaotusest: Dev -> Test -> QA -> (pre-live) -> Live/Production
@@ -18,7 +26,7 @@
 </details>
 
 <details>
-    <Summary>03/04/2023</Summary>
+    <Summary>04/03/2023</Summary>
 
     1. "Tarkvara testimine on tegevus, mille eesmärgiks on tuvastada tarkvaras peituvad vead, puudusd ja tõrked."
 
