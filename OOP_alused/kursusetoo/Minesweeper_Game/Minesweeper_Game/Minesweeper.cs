@@ -30,12 +30,16 @@ namespace Minesweeper_Game
         int gameFieldWidthUnits = 3, gameFieldHeightUnits = 3;
         int fieldsLeftToWin = 0;
         //valjade massiiv
-        Button[] field;
+        Button[] fields;
         //List, mis hoiab iga valja kohta booleani, kas antud valjal on pomm
         List<bool> fieldHasBomb = new List<bool>();
         List<int> fieldAdjacentBombs = new List<int>();
+        List<bool> fieldRevealed = new List<bool>();
 
-        bool testMode = false;
+        //Y= kuva valjade vaartuseid koguaeg, N = kuva valja vaartust peale valja avamist
+        bool testMode = true;
+
+        string gameStateMessage;
    
         public Minesweeper()
         {
@@ -47,12 +51,12 @@ namespace Minesweeper_Game
         private void StartGame()
         {
             
-            field = new Button[gameFieldWidthUnits * gameFieldHeightUnits];
+            fields = new Button[gameFieldWidthUnits * gameFieldHeightUnits];
             GenerateGameField();
             PlaceBombs();
             CalculateAdjacentBombsNumber();
 
-            GameOverMessage.Visible = false;
+            GameOverLabel.Visible = false;
             RestartButton.Visible = false;
         }
 
@@ -61,22 +65,27 @@ namespace Minesweeper_Game
             int dx = GameArea.Width / gameFieldWidthUnits;
             int dy = GameArea.Height / gameFieldHeightUnits;
 
-            for (int i = 0; i < field.Length; i++)
+            for (int i = 0; i < fields.Length; i++)
             {
-                field[i] = new Button();
-                GameArea.Controls.Add(field[i]);
-                field[i].Width = dx;
-                field[i].Height = dy;
+                fields[i] = new Button();
+                GameArea.Controls.Add(fields[i]);
+                fields[i].Width = dx;
+                fields[i].Height = dy;
                 int rida = i / gameFieldWidthUnits;
                 int veerg = i % gameFieldWidthUnits;
-                field[i].Left = veerg * dx;
-                field[i].Top = rida * dy;
+                fields[i].Left = veerg * dx;
+                fields[i].Top = rida * dy;
                 //field[i].Text = i.ToString();
                 //field[i].ForeColor = Color.Red;
-                field[i].BackColor = Color.LightGray;
-                field[i].Click += new EventHandler(Field_Click);
+
+                //maara valja algne stiil
+                fields[i].BackColor = Color.LightGray;
+                //seo valja "nupu" objektile syndmuse "jalgija"
+                fields[i].Click += new EventHandler(Field_Click);
+                //lisa valjale default muutujad
                 fieldAdjacentBombs.Add(0);
                 fieldHasBomb.Add(false);
+                fieldRevealed.Add(false);
             }
             //field[0].Text = "";
             //field[0].BackColor = Color.White;
@@ -98,7 +107,7 @@ namespace Minesweeper_Game
             //alusta pommide paigaldamist ja jooksuta seni kuni koik pommid on paigaldatud
             do
             {
-                for (int i = 0; i < field.Length; i++)
+                for (int i = 0; i < fields.Length; i++)
                 {
 
                     //kontrolli, kas valjal on juba pomm, kui ei siis jatka && kontrolli ka jooksvalt, kas pomme on jaanud veel paigaldada
@@ -110,8 +119,10 @@ namespace Minesweeper_Game
 
                         if (randomNumber > 75)
                         {
-                            field[i].Text = "X";
-                            field[i].ForeColor = Color.Red;
+                            fields[i].Text = "X";
+
+                            ShowHideFieldValue(i);
+                            
                             fieldHasBomb[i] = true;
                             bombsToPlace--;
                         }
@@ -136,7 +147,7 @@ namespace Minesweeper_Game
             int adjacentBombsCounter = 0;
 
             //kain labi koik valjad ukshaaval
-            for (int i = 0; i < field.Length; i++)
+            for (int i = 0; i < fields.Length; i++)
             {
                 //kontrollin, kas konkreetse indeksiga valjal on pomm, kui ei siis jatkan
                 if (!fieldHasBomb[i])
@@ -161,7 +172,8 @@ namespace Minesweeper_Game
                     //salvesta valja tulemus
                     fieldAdjacentBombs[i]  = adjacentBombsCounter;
                     //kuva tulemus valjale
-                    field[i].Text = fieldAdjacentBombs[i].ToString();
+                    fields[i].Text = fieldAdjacentBombs[i].ToString();
+                    ShowHideFieldValue(i);
                     adjacentBombsCounter = 0;
                 }
             }
@@ -195,7 +207,7 @@ namespace Minesweeper_Game
             for (int i = 0; i < fieldsToCheck.Length; i++)
             {
                 //kontrolli, kas absoluutse positsiooni indeks on manguvalja indeksite hulgas
-                if (absolutePositions[i] > -1 && absolutePositions[i] < field.Length)
+                if (absolutePositions[i] > -1 && absolutePositions[i] < fields.Length)
                 {
                     int inputFieldRow = fieldIndex / gameFieldWidthUnits;
                     int fieldToCheckRow = absolutePositions[i] / gameFieldWidthUnits;
@@ -222,9 +234,11 @@ namespace Minesweeper_Game
 
         private void Field_Click(object sender, EventArgs e)
         {
-            int n = Array.IndexOf(field, (Button)sender);
 
-            field[n].BackColor = Color.White;
+            int n = Array.IndexOf(fields, (Button)sender);
+            fields[n].BackColor = Color.White;
+            fieldRevealed[n] = true;
+            ShowHideFieldValue(n);
 
             //kontrolli, kas valjal on pomm voi mitte
             if (fieldHasBomb[n])
@@ -259,19 +273,58 @@ namespace Minesweeper_Game
 
         private void GameOver()
         {
-            GameOverMessage.Visible = true;
-            GameOverMessage.Text = "Game Over!";
-            RestartButton.Visible = true;
 
+            gameStateMessage = "Game Over!";
+            GameHasEnded(gameStateMessage);
         }
 
         private void GameWon()
         {
-            GameOverMessage.Visible = true;
-            GameOverMessage.Text = "Game Won!";
-            RestartButton.Visible = true;
+            gameStateMessage = "Game Won!";
+            GameHasEnded(gameStateMessage);
         }
 
-        
+        private void GameHasEnded(string messageToPlayer)
+        {
+            foreach (var field in fields)
+            {
+                field.Enabled = false;
+            }
+
+            GameOverLabel.Text = messageToPlayer;
+            GameOverLabel.BackColor = Color.Transparent;
+            GameOverLabel.Visible = true;
+            RestartButton.Visible = true;
+
+        }
+
+        private void ShowHideFieldValue(int fieldIndex)
+        {
+            
+            //kontrolli, kas testMode on aktiivne
+            if (testMode)
+            {
+                fields[fieldIndex].ForeColor = Color.Black;
+            }
+            else
+            {
+                if (fieldRevealed[fieldIndex])
+                {
+                    if (fieldHasBomb[fieldIndex])
+                    {
+                        fields[fieldIndex].ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        fields[fieldIndex].ForeColor = Color.Black;
+                    }
+                }
+                else
+                {
+                    fields[fieldIndex].ForeColor = Color.LightGray;
+                }
+            }
+
+        }
     }
 }

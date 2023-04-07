@@ -29,19 +29,33 @@
         private void InitializeComponent()
         {
             this.GameArea = new System.Windows.Forms.Panel();
+            this.GameOverLabel = new System.Windows.Forms.Label();
             this.RestartButton = new System.Windows.Forms.Button();
-            this.GameOverMessage = new System.Windows.Forms.RichTextBox();
             this.GameArea.SuspendLayout();
             this.SuspendLayout();
             // 
             // GameArea
             // 
+            this.GameArea.Controls.Add(this.GameOverLabel);
             this.GameArea.Controls.Add(this.RestartButton);
-            this.GameArea.Controls.Add(this.GameOverMessage);
             this.GameArea.Location = new System.Drawing.Point(125, 23);
             this.GameArea.Name = "GameArea";
             this.GameArea.Size = new System.Drawing.Size(500, 500);
             this.GameArea.TabIndex = 0;
+            // 
+            // GameOverLabel
+            // 
+            this.GameOverLabel.AutoSize = true;
+            this.GameOverLabel.BackColor = System.Drawing.Color.Transparent;
+            this.GameOverLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.GameOverLabel.ForeColor = System.Drawing.Color.Black;
+            this.GameOverLabel.Location = new System.Drawing.Point(162, 190);
+            this.GameOverLabel.Name = "GameOverLabel";
+            this.GameOverLabel.Size = new System.Drawing.Size(192, 45);
+            this.GameOverLabel.TabIndex = 2;
+            this.GameOverLabel.Text = "Game over!";
+            this.GameOverLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.GameOverLabel.Visible = false;
             // 
             // RestartButton
             // 
@@ -54,16 +68,6 @@
             this.RestartButton.Visible = false;
             this.RestartButton.Click += new System.EventHandler(this.RestartButton_Click);
             // 
-            // GameOverMessage
-            // 
-            this.GameOverMessage.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.GameOverMessage.Location = new System.Drawing.Point(175, 170);
-            this.GameOverMessage.Name = "GameOverMessage";
-            this.GameOverMessage.Size = new System.Drawing.Size(156, 49);
-            this.GameOverMessage.TabIndex = 0;
-            this.GameOverMessage.Text = "Game over!";
-            this.GameOverMessage.Visible = false;
-            // 
             // Minesweeper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -73,6 +77,7 @@
             this.Name = "Minesweeper";
             this.Text = "Form1";
             this.GameArea.ResumeLayout(false);
+            this.GameArea.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -81,6 +86,6 @@
 
         private Panel GameArea;
         private Button RestartButton;
-        private RichTextBox GameOverMessage;
+        private Label GameOverLabel;
     }
 }
