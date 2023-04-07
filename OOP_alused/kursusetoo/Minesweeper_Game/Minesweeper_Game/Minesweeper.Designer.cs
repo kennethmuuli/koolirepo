@@ -31,6 +31,8 @@
             this.GameArea = new System.Windows.Forms.Panel();
             this.GameOverLabel = new System.Windows.Forms.Label();
             this.RestartButton = new System.Windows.Forms.Button();
+            this.FieldsLeftLabel = new System.Windows.Forms.Label();
+            this.FieldsLeftCounterLabel = new System.Windows.Forms.Label();
             this.GameArea.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -38,7 +40,7 @@
             // 
             this.GameArea.Controls.Add(this.GameOverLabel);
             this.GameArea.Controls.Add(this.RestartButton);
-            this.GameArea.Location = new System.Drawing.Point(125, 23);
+            this.GameArea.Location = new System.Drawing.Point(209, 22);
             this.GameArea.Name = "GameArea";
             this.GameArea.Size = new System.Drawing.Size(500, 500);
             this.GameArea.TabIndex = 0;
@@ -68,17 +70,46 @@
             this.RestartButton.Visible = false;
             this.RestartButton.Click += new System.EventHandler(this.RestartButton_Click);
             // 
+            // FieldsLeftLabel
+            // 
+            this.FieldsLeftLabel.AutoSize = true;
+            this.FieldsLeftLabel.BackColor = System.Drawing.Color.Transparent;
+            this.FieldsLeftLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FieldsLeftLabel.ForeColor = System.Drawing.Color.Black;
+            this.FieldsLeftLabel.Location = new System.Drawing.Point(12, 22);
+            this.FieldsLeftLabel.Name = "FieldsLeftLabel";
+            this.FieldsLeftLabel.Size = new System.Drawing.Size(112, 32);
+            this.FieldsLeftLabel.TabIndex = 3;
+            this.FieldsLeftLabel.Text = "To reveal";
+            this.FieldsLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // FieldsLeftCounterLabel
+            // 
+            this.FieldsLeftCounterLabel.AutoSize = true;
+            this.FieldsLeftCounterLabel.BackColor = System.Drawing.Color.Transparent;
+            this.FieldsLeftCounterLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FieldsLeftCounterLabel.ForeColor = System.Drawing.Color.Black;
+            this.FieldsLeftCounterLabel.Location = new System.Drawing.Point(135, 22);
+            this.FieldsLeftCounterLabel.Name = "FieldsLeftCounterLabel";
+            this.FieldsLeftCounterLabel.Size = new System.Drawing.Size(56, 32);
+            this.FieldsLeftCounterLabel.TabIndex = 4;
+            this.FieldsLeftCounterLabel.Text = "###";
+            this.FieldsLeftCounterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Minesweeper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(731, 549);
+            this.Controls.Add(this.FieldsLeftCounterLabel);
+            this.Controls.Add(this.FieldsLeftLabel);
             this.Controls.Add(this.GameArea);
             this.Name = "Minesweeper";
             this.Text = "Form1";
             this.GameArea.ResumeLayout(false);
             this.GameArea.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -87,5 +118,7 @@
         private Panel GameArea;
         private Button RestartButton;
         private Label GameOverLabel;
+        private Label FieldsLeftLabel;
+        private Label FieldsLeftCounterLabel;
     }
 }

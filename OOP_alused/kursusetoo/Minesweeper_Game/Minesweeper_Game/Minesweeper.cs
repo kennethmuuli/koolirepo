@@ -26,8 +26,8 @@ namespace Minesweeper_Game
         //game won state kui koik valjad on avatud peale pommide
         /// </MVP>
 
-        int bombsInGame = 2;
-        int gameFieldWidthUnits = 3, gameFieldHeightUnits = 3;
+        int bombsInGame = 5;
+        int gameFieldWidthUnits = 5, gameFieldHeightUnits = 5;
         int fieldsLeftToWin = 0;
         //valjade massiiv
         Button[] fields;
@@ -38,6 +38,7 @@ namespace Minesweeper_Game
 
         //Y= kuva valjade vaartuseid koguaeg, N = kuva valja vaartust peale valja avamist
         bool testMode = true;
+        bool foundEmptyConnectedFields = false;
 
         string gameStateMessage;
    
@@ -45,13 +46,15 @@ namespace Minesweeper_Game
         {
             InitializeComponent();
             StartGame();
-            fieldsLeftToWin = gameFieldWidthUnits * gameFieldHeightUnits - bombsInGame;
+            
         }
 
         private void StartGame()
         {
             
             fields = new Button[gameFieldWidthUnits * gameFieldHeightUnits];
+            fieldsLeftToWin = gameFieldWidthUnits * gameFieldHeightUnits - bombsInGame;
+            FieldsLeftCounterLabel.Text = fieldsLeftToWin.ToString();
             GenerateGameField();
             PlaceBombs();
             CalculateAdjacentBombsNumber();
@@ -248,14 +251,53 @@ namespace Minesweeper_Game
             else
             {
                 fieldsLeftToWin--;
+                FieldsLeftCounterLabel.Text = fieldsLeftToWin.ToString();
 
-                //kui pommideta valjad on otsas, siis on mang voidetud
-                if (fieldsLeftToWin == 0)
+                if (fields[n].Text == "0")
                 {
-                    GameWon();
+                    do
+                    {
+                        //tagastan ymbritsevate valjade indeksi massiivi
+                        int[] adjacentPositions = FieldsToCheck(n);
+                        RevealConnectedZeroField(adjacentPositions);
+
+                    } while (foundEmptyConnectedFields);
+                    
+
                 }
             }
 
+            //kui pommideta valjad on otsas, siis on mang voidetud
+            if (fieldsLeftToWin == 0)
+            {
+                GameWon();
+            }
+
+        }
+
+        private void RevealConnectedZeroField(int[] adjacentPositions)
+        {
+
+            //kain labi iga ymbritseva valja ja kontrollin, mis on nende AdjacentBombCounter
+            for (int x = 0; x < adjacentPositions.Length; x++)
+            {
+
+                int nextFieldToCheck = adjacentPositions[x];
+
+                //kontrollin, kas ymbritseval valjal on pomm
+                if (fields[nextFieldToCheck].Text == "0" && !fieldRevealed[nextFieldToCheck])
+                {
+                    fieldRevealed[nextFieldToCheck] = true;
+                    fields[nextFieldToCheck].BackColor= Color.White;
+                    ShowHideFieldValue(nextFieldToCheck);
+                    fieldsLeftToWin--;
+                    FieldsLeftCounterLabel.Text = fieldsLeftToWin.ToString();
+                    //###
+                    foundEmptyConnectedFields= true;
+                }
+                else foundEmptyConnectedFields= false;
+
+            }
         }
 
         private void RestartButton_Click(object sender, EventArgs e)
