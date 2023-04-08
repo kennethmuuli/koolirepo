@@ -26,7 +26,7 @@ namespace Minesweeper_Game
         //game won state kui koik valjad on avatud peale pommide
         /// </MVP>
 
-        int bombsInGame = 5;
+        int bombsInGame = 1;
         int gameFieldWidthUnits = 5, gameFieldHeightUnits = 5;
         int fieldsLeftToWin = 0;
         //valjade massiiv
@@ -34,11 +34,12 @@ namespace Minesweeper_Game
         //List, mis hoiab iga valja kohta booleani, kas antud valjal on pomm
         List<bool> fieldHasBomb = new List<bool>();
         List<int> fieldAdjacentBombs = new List<int>();
+        
         List<bool> fieldRevealed = new List<bool>();
 
         //Y= kuva valjade vaartuseid koguaeg, N = kuva valja vaartust peale valja avamist
         bool testMode = true;
-        bool foundEmptyConnectedFields = false;
+        
 
         string gameStateMessage;
    
@@ -255,14 +256,8 @@ namespace Minesweeper_Game
 
                 if (fields[n].Text == "0")
                 {
-                    do
-                    {
-                        //tagastan ymbritsevate valjade indeksi massiivi
-                        int[] adjacentPositions = FieldsToCheck(n);
-                        RevealConnectedZeroField(adjacentPositions);
-
-                    } while (foundEmptyConnectedFields);
                     
+                    ConnectedZeroField(n);
 
                 }
             }
@@ -275,28 +270,24 @@ namespace Minesweeper_Game
 
         }
 
-        private void RevealConnectedZeroField(int[] adjacentPositions)
+        private void ConnectedZeroField(int fieldIndex)
         {
 
-            //kain labi iga ymbritseva valja ja kontrollin, mis on nende AdjacentBombCounter
+            int[] adjacentPositions = FieldsToCheck(fieldIndex);
+
+            //Kain esmalt leitud 0 valja ymbritsevad positsioonid labi ja avan koik leitud jargmised 0 valjad
             for (int x = 0; x < adjacentPositions.Length; x++)
             {
-
                 int nextFieldToCheck = adjacentPositions[x];
 
-                //kontrollin, kas ymbritseval valjal on pomm
                 if (fields[nextFieldToCheck].Text == "0" && !fieldRevealed[nextFieldToCheck])
                 {
                     fieldRevealed[nextFieldToCheck] = true;
-                    fields[nextFieldToCheck].BackColor= Color.White;
+                    fields[nextFieldToCheck].BackColor = Color.White;
                     ShowHideFieldValue(nextFieldToCheck);
                     fieldsLeftToWin--;
                     FieldsLeftCounterLabel.Text = fieldsLeftToWin.ToString();
-                    //###
-                    foundEmptyConnectedFields= true;
                 }
-                else foundEmptyConnectedFields= false;
-
             }
         }
 
