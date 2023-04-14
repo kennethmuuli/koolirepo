@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<!-- 
+AngularJS täiendab HTML-i ng-direktiividega
+ng-app direktiiv määrab AngularJS rakenduse
+ng-model direktiiv määrab HTML-e vormielementide  väärtuse (input, select, textarea)  rakenduse sisuga.
+-->
+
+<div ng-app=""> <!-- ng-app direktiiv ütleb AngularJS et <div>  element on  AngularJS  rakenduse "omanik". -->
+ 
+<p>Input something in the input box:</p>
+<p>Name: <input type="text" ng-model="name"></p><!-- ng-model direktiiv seob sisestusvälja väärtuse rakenduse muutuja nimega. -->
+
+<p ng-bind="name"></p> <!-- ng-bind direktiiv seob <p> elemendi sisu rakenduse muutuja nimega. -->
+
+</div>
+</body>
+</html>
