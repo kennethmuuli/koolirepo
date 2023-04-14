@@ -26,44 +26,73 @@ namespace Minesweeper_Game
         //game won state kui koik valjad on avatud peale pommide
         /// </MVP>
 
-        int bombsInGame = 1;
-        int gameFieldWidthUnits = 5, gameFieldHeightUnits = 5;
+        int bombsInGame = 0;
+        int gameFieldWidthUnits = 0, gameFieldHeightUnits = 0;
         int fieldsLeftToWin = 0;
+        int playerLives = 0;
         //valjade massiiv
         Button[] fields;
         //List, mis hoiab iga valja kohta booleani, kas antud valjal on pomm
         List<bool> fieldHasBomb = new List<bool>();
-        List<int> fieldAdjacentBombs = new List<int>();
-        
         List<bool> fieldRevealed = new List<bool>();
+        List<int> fieldAdjacentBombs = new List<int>();
 
         //Y= kuva valjade vaartuseid koguaeg, N = kuva valja vaartust peale valja avamist
-        bool testMode = true;
-        
-
+        bool testMode = false;
+        string gameDifficulty = "Easy";
         string gameStateMessage;
    
         public Minesweeper()
         {
             InitializeComponent();
-            StartGame();
             
         }
 
         private void StartGame()
         {
-            
+            Random random = new Random();
+
+            switch (gameDifficulty)
+            {
+                case "Easy":
+
+                    gameFieldWidthUnits = 3;
+                    gameFieldHeightUnits = 3;
+                    bombsInGame = random.Next(2, 4);
+                    playerLives = 2;
+                    break;
+                case "Medium":
+
+                    gameFieldWidthUnits = 5;
+                    gameFieldHeightUnits = 5;
+                    bombsInGame = random.Next(6, 10);
+                    playerLives = 3;
+                    break;
+                case "Difficult":
+                    gameFieldWidthUnits = 7;
+                    gameFieldHeightUnits = 7;
+                    bombsInGame = random.Next(11, 16);
+                    playerLives = 4;
+                    break;
+            }
+
+
             fields = new Button[gameFieldWidthUnits * gameFieldHeightUnits];
             fieldsLeftToWin = gameFieldWidthUnits * gameFieldHeightUnits - bombsInGame;
             FieldsLeftCounterLabel.Text = fieldsLeftToWin.ToString();
+            BombsCounter.Text = bombsInGame.ToString();
+            LivesCounter.Text = playerLives.ToString();
             GenerateGameField();
             PlaceBombs();
             CalculateAdjacentBombsNumber();
 
             GameOverLabel.Visible = false;
             RestartButton.Visible = false;
+            LivesCounter.Visible = true;
+            LivesCounterLabel.Visible = true;
         }
 
+        #region Game setup logic
         private void GenerateGameField()
         {
             int dx = GameArea.Width / gameFieldWidthUnits;
@@ -183,7 +212,9 @@ namespace Minesweeper_Game
             }
 
         }
+        #endregion
 
+        #region Game logic
         private int[] FieldsToCheck(int fieldIndex)
         {
             //massivi indeksite jarjestus [top left, top, top right, before, after, bottom left, bottom, bottom right] 
@@ -240,37 +271,41 @@ namespace Minesweeper_Game
         {
 
             int n = Array.IndexOf(fields, (Button)sender);
-            fields[n].BackColor = Color.White;
-            fieldRevealed[n] = true;
-            ShowHideFieldValue(n);
 
-            //kontrolli, kas valjal on pomm voi mitte
-            if (fieldHasBomb[n])
+            //kontrolli, kas klikitud vali on juba varem avatud
+            if (!fieldRevealed[n])
             {
-                GameOver();
-            }
-            else
-            {
-                fieldsLeftToWin--;
-                FieldsLeftCounterLabel.Text = fieldsLeftToWin.ToString();
+                fields[n].BackColor = Color.White;
+                fieldRevealed[n] = true;
+                ShowHideFieldValue(n);
 
-                if (fields[n].Text == "0")
+                //kontrolli, kas valjal on pomm voi mitte
+                if (fieldHasBomb[n])
                 {
-                    
-                    ConnectedZeroField(n);
-
+                    TakeDamage();
                 }
-            }
+                else
+                {
+                    fieldsLeftToWin--;
+                    FieldsLeftCounterLabel.Text = fieldsLeftToWin.ToString();
 
-            //kui pommideta valjad on otsas, siis on mang voidetud
-            if (fieldsLeftToWin == 0)
-            {
-                GameWon();
+                    if (fields[n].Text == "0")
+                    {
+                        RevealConnectedZeroField(n);
+                    }
+                }
+
+                //kui pommideta valjad on otsas, siis on mang voidetud
+                if (fieldsLeftToWin == 0)
+                {
+                    GameWon();
+                }
+
             }
 
         }
 
-        private void ConnectedZeroField(int fieldIndex)
+        private void RevealConnectedZeroField(int fieldIndex)
         {
 
             int[] adjacentPositions = FieldsToCheck(fieldIndex);
@@ -289,6 +324,7 @@ namespace Minesweeper_Game
                     FieldsLeftCounterLabel.Text = fieldsLeftToWin.ToString();
                 }
             }
+
         }
 
         private void RestartButton_Click(object sender, EventArgs e)
@@ -304,6 +340,17 @@ namespace Minesweeper_Game
 
         }
 
+
+        private void TakeDamage()
+        {
+            playerLives--;
+            LivesCounter.Text = playerLives.ToString();
+
+            if (playerLives == 0)
+            {
+                GameOver();
+            }
+        }
         private void GameOver()
         {
 
@@ -330,6 +377,7 @@ namespace Minesweeper_Game
             RestartButton.Visible = true;
 
         }
+
 
         private void ShowHideFieldValue(int fieldIndex)
         {
@@ -359,5 +407,32 @@ namespace Minesweeper_Game
             }
 
         }
+
+        #endregion
+
+        #region Menu
+        private void EasyButton_Click(object sender, EventArgs e)
+        {
+            gameDifficulty = "Easy";
+        }
+
+        private void MediumButton_Click(object sender, EventArgs e)
+        {
+            gameDifficulty = "Medium";
+        }
+
+        private void DifficultButton_Click(object sender, EventArgs e)
+        {
+            gameDifficulty = "Difficult";
+        }
+
+
+        private void StartButton_Click(object sender, EventArgs e)
+        {
+            StartGame();
+            Menu.Enabled = false;
+            Menu.Visible = false;
+        }
+        #endregion
     }
 }
