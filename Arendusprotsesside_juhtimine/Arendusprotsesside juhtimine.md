@@ -8,6 +8,21 @@
 <details>
   <Summary>13/04/2023</Summary>
 
+  1) Teemad: traits, interfaces, magic methods, mitme PHP faili kasutus, PHP kasutamine veebis
+    - magic methods lisa infot: https://www.php.net/manual/en/language.oop5.magic.php
+  2) Autoloading: https://en.wikipedia.org/wiki/SOLID
+  3) Composer: https://getcomposer.org/
+  4) Kodune ülesanne, lugemiseks:
+    - https://www.php-fig.org/psr/psr-4/
+    - https://www.php-fig.org/psr/psr-1/
+    - https://www.php-fig.org/psr/psr-12/
+    - https://phptherightway.com/
+
+</details>
+
+<details>
+  <Summary>13/04/2023</Summary>
+
   Kommentaariks: Kuna arendusprotsessi juhtimisest pole eriti pikalt midagi rääkida siis keskendume hoopis veidi rohkem PHP-le.
 
   1) Algselt loodud C ja HTMLi ühenduslüliks. Circa versioon 5-st võiks öelda, et PHPst oli välja kujunendud täiesti omaette programmeerimiskeel.
