@@ -7,9 +7,21 @@
 ## Tundide markmed
 
 <details>
-    <Summary>04/01/2023</Summary>
+    <Summary>15/04/2023</Summary>
 
-    Õppe jõud oli purjus. Ei tea, mida me teeme. Word vist tuleb katki teha ja siis õppejõud saab meile Microsofti kõigile töökoha nagu ma aru sain. icc, icc
+    - Tracerbullet testing
+    - Automaattestid:
+        - Unit testing, kontrollivad programmi töötamise loogikat
+            - Vaatasime milline üks Unit test väljanäeb ja kuidas seda luua (pangakonto näide)
+    - Kodutöö: The Art of Unit Testing, tutvuge sellega või mõni muu ühik testimise raamat. Lisaks veebileht http://xunitpatterns.com/ --> proovige mõnele koodijupile ise unit teste kirjutada.
+
+
+</details>
+
+<details>
+    <Summary>01/04/2023</Summary>
+
+    Ei tea, mida me teeme. Word vist tuleb katki teha ja siis õppejõud saab meile Microsofti kõigile töökoha nagu ma aru sain. icc, icc
 
 </details>
 
