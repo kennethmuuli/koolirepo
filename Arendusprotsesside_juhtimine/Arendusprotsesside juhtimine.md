@@ -6,6 +6,33 @@
 - Kaspari repo: https://github.com/Kasparsu/kta22elearnphp
 
 <details>
+  <Summary>27/04/2023</Summary>
+
+  1) Materjale:
+    - https://en.wikipedia.org/wiki/Shebang_(Unix)
+    - https://learn.microsoft.com/en-us/windows/powertoys/
+    - https://www.php.net/manual/en/types.comparisons.php
+  2) PHP ja andmebaaside kasutamine:
+    - Tarvilik ennekõike välja valida, millist andmebaasi kasutada.
+    - Mõned andmebaasid:
+      - https://www.postgresql.org/download/
+      - https://www.mysql.com/
+      - https://mariadb.org/
+      - https://sqlite.org/index.html
+    - Andmebaaside haldustööriistad:
+      - SQL Clients:
+        - https://medevel.com/17-sql-client-open-source/
+        - https://www.jetbrains.com/datagrip/
+  3) Andmebaasi ülesseadmine:
+    - Installisime DataGripi, lõime "posts" tabeli ja enablisime php-le (php.inis) extensioni pdo_sqlite
+    - PDO manual https://www.php.net/manual/en/book.pdo.php
+    - Connecting the database (PDO Example): https://www.w3schools.com/php/php_mysql_connect.asp
+  4) Andmebaasist andmete saamine:
+    - 
+
+</details>
+
+<details>
   <Summary>13/04/2023</Summary>
 
   1) Teemad: traits, interfaces, magic methods, mitme PHP faili kasutus, PHP kasutamine veebis
