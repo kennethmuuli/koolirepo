@@ -6,6 +6,18 @@
 - Kaspari repo: https://github.com/Kasparsu/kta22elearnphp
 
 <details>
+  <Summary>28/04/2023</Summary>
+
+  1) Andmebaasi päringute lihtsustamine, andmebaasi päringute class (DB)
+  2) Andmebaasi mudelite loomine (Models)
+  3) Lugemiseks vaatamiseks, e-mailide valideerimisest:
+    - https://www.youtube.com/watch?v=xxX81WmXjPg
+    - https://david-gilbertson.medium.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643
+  4) Jäin maha, tunni lõpus Kaspari gitist tiritud sisu alla
+
+</details>
+
+<details>
   <Summary>27/04/2023</Summary>
 
   1) Materjale:
