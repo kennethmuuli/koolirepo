@@ -7,6 +7,16 @@
 ## Tundide markmed
 
 <details>
+    <Summary>29/04/2023</Summary>
+
+    - Kuidas saada lahti välistest sõltuvustest?
+    - Jäid magama... norm vend oled Kenneth
+
+
+</details>
+
+
+<details>
     <Summary>15/04/2023</Summary>
 
     - Tracerbullet testing
