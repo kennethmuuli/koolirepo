@@ -1,0 +1,59 @@
+# ... tundide märkmed
+
+## Ressursid
+- https://www.jetbrains.com/phpstorm/
+- https://laravel.com/
+- https://laravel.com/docs/10.x#your-first-laravel-project
+
+<details>
+  <Summary>11/05/2023</Summary>
+
+    1) Blog projekti loomine, kasutades neid juhised -> https://laravel.com/docs/10.x#your-first-laravel-project
+        - viskas errorit, veateatest saime teada, et php.inis oli enablemata `fileinfo`
+        - siis oli probleem juba loodud projektikaustaga, tegime lihtsalt `rm -r <projektikausta nimi>` ja uuesti esimene käsk
+        - projekt pysti ja siis tegin init commiti ara, et oleks muutuseid naha kenasti vs algse projektiga
+    2) Tirisin alla ka PHPStormi, et seda IDE proovida
+        - Kaspar disablis inlay-hintidest maha parametersi näitamise AGA see on muidu üli kasulik asi, palju mugavam kirjutada
+    3) Käisime läbi kataloogide sisu kõrgel tasandil
+        - Enamus tööst appi all toimub controllerite ja modelite kaustades
+        - Bootstrap siin EI viita CSS raamistikule vaid koodile, mis jooksutatakse rakenduse käivitamisel "bootstrapping smth"
+        - ORM -> objekt relational model, voimaldavad andmebaaside seoseid kirjeldada ja mudida koodi tasandil
+        - public kataloog taaskord sisaldab index.php ja on avalikult nähtav osa, sellega peidetakse ara kogu muu sisu
+            - .htaccess veebiserveri seadistuse jaoks (loodud iseenesest Apache jaoks, kuid saab pmst kasutada ka teiste jaoks)
+            - robots.txt moeldud robotite kontrolliks, naitaks blokeeri robotitel lehtesid vaadata
+        - resources, tooriistade tarbeks, naiteks Vite, mida juba vaatasime, kuid seal asuvad ka meie vaated 'views' kaust
+            - Laravel ise kasutab Blade templiitimiseks
+        - env fail alati git ignore, kuna sisaldab tundliku infot, kui tahad seda nn malli jagada siis täienda alati uute väärtuste lisamisel envi ja env exampleit ja väärtusta selle failis muutujad dummy väärtustega
+        - artisan, laraveli terminal tööriist, mis tuleb kaasa koos Laravelliga, väga asjalik asi
+        - KASUTUSELE LÄHEVAD MEIL PÕHILISELT: .env ning andmebaasi, route ja app model ja app controlleri kaustad
+    4) Artisani jooksutamiseks `php artisan`, pead olema projekti root kataloogis. Mõned olulisemad kasud:
+        - `php artisan serve` - käivitab ja serveerib meie rakenduse
+        - `make`
+    5) Blade kasutamise näidis:
+
+        ````
+
+        {{--    <?php for($i = 0; $i<10; $i++) ?>--}}
+        {{--        <li><?=$i?></li>--}}
+        {{--    <?php endfor; ?>--}}
+
+        {{--PHP tagide asemel @--}}
+        {{--    @for($i = 0; $i<10; $i++)--}}
+        {{--        <li><?=$i?></li>--}}
+        {{--    @endfor--}}
+
+        {{--Muutujad saab markeerida "{{ X }}" hoopis--}}
+        @for($i = 0; $i<10; $i++)
+            <li>{{$i}}</li>
+        @endfor
+
+        ````
+
+    6) Laravellil on VÄGA hea dokumentatsioon. The Basics tasub läbi lugeda.
+
+    7) Tutvuda sellega https://laravel.com/docs/10.x/blade ja sellega https://laracasts.com/series/laravel-8-from-scratch - kodutöö
+    
+
+
+
+</details>

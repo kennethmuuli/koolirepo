@@ -6,6 +6,29 @@
 - Kaspari repo: https://github.com/Kasparsu/kta22elearnphp
 
 <details>
+  <Summary>11/05/2023</Summary>
+
+  1) Autentimisest juttu
+  2) Failide üleslaadimine
+    - Kuhu need lähevad? Selle jaoks tuleb lisada vormile lisa tükk `enctype="multipart/form-data"`
+    - Liiga suur pilt andis error koodiks 1. Baas suurus 2MB.
+    - Faili salvestus, fail salvestatakse algselt ainult hetkeks siin:
+    ````
+    public function store(){
+        dd($_POST, $_FILES);
+        $post = new Post();
+        $post->title = $_POST['title'];
+        $post->body = $_POST['body'];
+        $post->save();
+        header('Location: /admin/posts');
+    }
+    ````
+      - Et fail salvestuks tuleb see ära liigutada kasutades funktsiooni `move_uploaded_file`, näiteks: `move_uploaded_file($_FILES['image']['tmp_name'], 'public/uploads' . $_FILES['image']['name']);`
+      - nime jätmine originaal nimeks on halb mõte, kuna uus sama nimega fail kirjutaks selle üle
+
+</details>
+
+<details>
   <Summary>28/04/2023</Summary>
 
   1) Andmebaasi päringute lihtsustamine, andmebaasi päringute class (DB)
@@ -50,7 +73,7 @@
   1) Teemad: traits, interfaces, magic methods, mitme PHP faili kasutus, PHP kasutamine veebis
     - magic methods lisa infot: https://www.php.net/manual/en/language.oop5.magic.php
   2) Autoloading: https://en.wikipedia.org/wiki/SOLID
-  3) Composer: https://getcomposer.org/
+  3) Composer: https://getcomposer.org/ `composer install`
   4) Kodune ülesanne, lugemiseks:
     - https://www.php-fig.org/psr/psr-4/
     - https://www.php-fig.org/psr/psr-1/
