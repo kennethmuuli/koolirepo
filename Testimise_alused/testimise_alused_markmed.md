@@ -7,6 +7,23 @@
 ## Tundide markmed
 
 <details>
+    <Summary>13/05/2023</Summary>
+
+    - Testide automatiseerimine
+    - Mis asi on DevOps? (https://en.wikipedia.org/wiki/DevOps_toolchain)
+        - DEV:
+            - Plan, Create, Verify
+        - OPS / Admins:
+            - Configure, Monitor
+        - Shared:
+            - Package, Release
+    - Azure DevOps
+    - Scrum & Kanban
+
+
+</details>
+
+<details>
     <Summary>29/04/2023</Summary>
 
     - Kuidas saada lahti välistest sõltuvustest?

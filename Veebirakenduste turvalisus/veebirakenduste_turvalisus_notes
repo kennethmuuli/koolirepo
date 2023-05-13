@@ -1,0 +1,34 @@
+# Veebirakenduste turvalisus tundide märkmed
+
+## Ressursid
+- https://hashcat.net/hashcat/
+- https://towardsdatascience.com/logarithms-exponents-in-complexity-analysis-b8071979e847
+- https://www.tunnelsup.com/hash-analyzer/
+- https://en.wikipedia.org/wiki/Shut_Up_and_Dance_(Black_Mirror)
+- https://en.wikipedia.org/wiki/Mr._Robot
+- https://www.passwordmonster.com/
+
+<details>
+  <Summary>12/05/2023</Summary>
+
+    1) Alustades algusest, tana on veebirakendused yldiselt turvalised
+    2) Cookide varastamine, HTTP only cookied, lingi kaudu varastamine, Javascript injection type attack / cross site scripting (https://owasp.org/www-community/attacks/xss/)
+    3) HTTP vs HTTPS (https://en.wikipedia.org/wiki/HTTPS), mis asi see luku mark on ja mida see teeb, pariselt:
+        - HTTPS turvab ara "man-in-the-middle" ryndele, esimesel yhendusel serveri ja kliendi vahel jagavad viimase kryptograafilisi votmeid, ja kogu ylejaanud suhtlus on nahtamatu (https://en.wikipedia.org/wiki/Man-in-the-middle_attack)
+        - MITM attack tanapaeval enamasti vagapalju kasuliku infot ei voimaldaja rundajal saada, yhtlasi HTTPS ei ole selle vastu taielikult kaitsev
+        - Kuidas saab client/server aru, mis asi on router? Router annab sellest lokaalsetele seadmetele teada. Samas vorgus olles saab rundaja arvuti saata oma arvutiga valja enda poolt teadet, et hoopis see seade on router, ja teeb seda palju kiiremini ja tihedamalt. See petab ara teised arvutid, mis saadavad infot nyyd hoopis rundaja arvutisse, see edastab selle paris routerile, et neti yhendus tootaks ja saab sealt vajalikud vasted tagasi. Hence MITM.
+        - Seejuures tänapäeval ei ole enam praktiliselt mitte mingit seost HTTPS ja "usaldusväärse" leheküljega.
+    4) SQL injection attacks
+    5) HASH rules:
+        - same value gives same output or there is a way to check if output came from value
+        - different value gives different output
+        - 
+    6) Rootkit, tükk koodi, mille abil saab teha arvutis kõike admin õigustega.
+
+    Kodutööks (vaadata):
+    - https://en.wikipedia.org/wiki/Shut_Up_and_Dance_(Black_Mirror)
+    - https://en.wikipedia.org/wiki/Mr._Robot
+    - Now you See Me
+
+
+</details>
