@@ -9,6 +9,31 @@
 - https://www.passwordmonster.com/
 
 <details>
+    <Summary>26/05/2023</Summary>
+
+    1) Paroolide crackimine:
+        - iganenud hash funktsioonid oTLM, NTLM, MD5, SHA1, SHA256 - ei soovitata enam kasutada. Pikemat sorti sisudega on okei enam vähem, kuid siiski mitte soovituslik.
+        - RainbowCrack (http://project-rainbowcrack.com/) - kuna varasemad hashid annavad sama sisendiga alati sama tulemuse siis pmst tekitatakse vastete tabel ning konkreetse hashi puhul on võimalik sellele lihtsalt vaste otsida.
+        - Lahenduseks on antud juhul uuemad hash funktsioonid, näiteks bcrypt, kus hashimist tehakse mitme kordselt e. hash hashitakse
+            - krüptimisel visatakse välja erinev hash isegi sama asja krüptimisel, see eemaldab võimaluse teha hash tabeleid nagu rainbow crack
+            - mitmekordsel hashimisel on olemas ka kontroll funktsioonid, et teada saada, kas tulemus vastab hashile
+    2) SSH key loomine (https://www.ssh.com/academy/ssh/keygen) -> proovisime seda `ssh-keygen -t rsa -b 4096` tasub hoida omaette koiki votmeid
+        - lisasime giti
+        - kui soovin mingit projekti alla tirida siis peame koigepealt kaivitame ssh agenti (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+        - ssh-agent kaivitatud, kasutan kasku `ssh-add <private key file name>`
+        - kui pole ise known-hostsi lisanud siis küsib esimene kord hosti kohta ja lisab selle ise (https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints)
+    SN) GUI - graphical user interface ; TUI - terminal/text user interface ; CLI - command line interface
+    3) Häkkimise treenimiseks -> https://hackthissite.org/ ; hackthebox.com ; https://level1.idocker.hacking-lab.com/ ; https://github.com/devploit/ctf-awesome-resources ; https://github.com/devploit/ctf-awesome-resources#online-platforms
+        - kennethmuuli / usual
+        - proovime teha basic ja JS ylesandeid
+    4) Rääkisime füüsilistest seadeldistest s.h. muukimisvahendid. Näiteks:
+        - https://flipperzero.one/
+        - https://shop.hak5.org/collections/mischief-gadgets
+        - https://pwnagotchi.ai/
+
+</details>
+
+<details>
   <Summary>12/05/2023</Summary>
 
     1) Alustades algusest, tana on veebirakendused yldiselt turvalised
